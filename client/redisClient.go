@@ -30,9 +30,9 @@ func handleInput(msg string) error {
 				return errors.New("Expiration time must be Integer")
 			}
 		}
-	case "DELETE":
+	case "DEL":
 		if len(cmds) != 2 {
-			return errors.New("DELETE must be: DELETE KEY")
+			return errors.New("DEL must be: DEL KEY")
 		}
 	case "KEYS":
 		if len(cmds) != 1 {
